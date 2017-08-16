@@ -2,6 +2,18 @@ $('.single-item').slick({
         dots: true
 });
 
+// $(document).ready(function(){
+//     if ($(window).width() <= '768'){
+//         $('.single-item').slick({
+//             arrows: false
+//         });
+//     } else {
+//         $('.single-item').slick({
+//             arrows: true
+//         });
+//     }
+// });
+
 
 var hamburger = document.querySelector(".hamburger");
 var hamburgerLines = document.querySelectorAll('.hamburger__line');
