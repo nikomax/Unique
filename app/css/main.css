@@ -1,6 +1,8 @@
 @charset "UTF-8";
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  max-width: 1500px;
+  margin: 0 auto; }
 
 a {
   text-decoration: none; }
@@ -699,28 +701,39 @@ li {
   color: #062033; }
 
 .list--portfolio {
-  margin: 0 auto;
-  width: 40%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  margin: 0 auto; }
+  @media (min-width: 320px) {
+    .list--portfolio {
+      width: 100%;
+      padding-left: 0px; } }
+  @media (min-width: 1024px) {
+    .list--portfolio {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 40%;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
 
-.list__item {
-  display: inline-block; }
+@media (min-width: 320px) {
+  .list__item {
+    display: block; } }
+
+@media (min-width: 1024px) {
+  .list__item {
+    display: inline-block; } }
 
 .list__link {
   display: block;
-  padding: 5px 10px;
+  padding: 0;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   font-size: 15px;
@@ -728,6 +741,9 @@ li {
   .list__link:hover {
     background: #709dca;
     color: white; }
+  @media (min-width: 1024px) {
+    .list__link {
+      padding: 5px 10px; } }
 
 .portfolio__gallery {
   margin-top: 30px;
@@ -749,8 +765,16 @@ li {
           justify-content: space-between; }
 
 .gallery__item {
-  width: 25%;
   position: relative; }
+  @media (min-width: 320px) {
+    .gallery__item {
+      width: 100%; } }
+  @media (min-width: 768px) {
+    .gallery__item {
+      width: 50%; } }
+  @media (min-width: 1024px) {
+    .gallery__item {
+      width: 25%; } }
   .gallery__item:hover > .item__hover {
     display: -webkit-box;
     display: -webkit-flex;
