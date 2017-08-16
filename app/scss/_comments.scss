@@ -1,0 +1,26 @@
+.comments {
+  text-align: center;
+  .slick-dots {
+    bottom: -25px;
+
+    li {
+
+    }
+    button:before {
+      color: #d4d3d4;
+      font-size: 12px;
+      height: 14px;
+      width: 14px;
+    }
+
+    li.slick-active button:before {
+      border: 2px solid $theme_color;
+      margin-top: 0;
+    }
+  }
+}
+
+.fa-comments-o {
+  color: $logo_color;
+  font-size: 25px;
+}

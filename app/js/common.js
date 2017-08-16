@@ -1,6 +1,13 @@
 $('.single-item').slick({
         dots: true
 });
+$('.multiple-items').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true
+});
 
 // $(document).ready(function(){
 //     if ($(window).width() <= '768'){

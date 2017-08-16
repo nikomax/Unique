@@ -241,7 +241,7 @@ li {
 .logo {
   font-family: 'Pacifico';
   color: #ffc155;
-  font-size: 30px; }
+  font-size: 25px; }
 
 .hamburger {
   margin: -15px 20px 0 0;
@@ -584,7 +584,7 @@ li {
   text-align: center;
   margin-top: 80px; }
 
-.portfolio__heading {
+.heading {
   text-transform: uppercase;
   font-weight: 900;
   color: #709dca; }
@@ -704,5 +704,22 @@ li {
     display: block;
     width: inherit;
     height: inherit; }
+
+.comments {
+  text-align: center; }
+  .comments .slick-dots {
+    bottom: -25px; }
+    .comments .slick-dots button:before {
+      color: #d4d3d4;
+      font-size: 12px;
+      height: 14px;
+      width: 14px; }
+    .comments .slick-dots li.slick-active button:before {
+      border: 2px solid #709dca;
+      margin-top: 0; }
+
+.fa-comments-o {
+  color: #ffc155;
+  font-size: 25px; }
 
 /*# sourceMappingURL=main.css.map */
