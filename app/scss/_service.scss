@@ -1,0 +1,84 @@
+.container--service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header--service {
+  text-align: center;
+}
+
+.header__title {
+  text-transform: uppercase;
+  font-size: 26px;
+  color: $theme_color;
+}
+
+.header__subtitle {
+  font-size: 16px;
+  font-weight: normal;
+  color: #394b50;
+  margin-top: -15px;
+}
+
+.service__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: -40px;
+}
+
+.service__item {
+  position: relative;
+  margin-left: 50px;
+
+  @media (min-width: 320px) {
+    width: 90%;
+  }
+  
+  @media (min-width: 1024px) {
+    width: 40%;
+  }
+}
+
+.item__header {
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #394b50;
+  font-size: 16px;
+}
+
+.item__desc {
+  color: #7b7b7b;
+  font-size: 13px;
+}
+
+.service__item:before {
+  margin-left: 5px;
+  top: 20px;
+  left: -50px;
+  position: absolute;
+  content: url("../img/Tools.png");
+}
+
+.service__item:nth-child(2):before {
+  content: url("../img/Basket_loaded.png");
+}
+
+.service__item:nth-child(3):before {
+  content: url("../img/Layers.png");
+}
+
+.service__item:nth-child(4):before {
+  content: url("../img/Analytics.png");
+}
+
+.service__item:nth-child(5):before {
+  content: url("../img/Gauge.png");
+}
+
+.service__item:nth-child(6):before {
+  content: url("../img/Globe.png");
+}

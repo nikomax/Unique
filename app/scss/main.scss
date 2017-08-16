@@ -4,11 +4,18 @@ body {
 a {
   text-decoration: none;
 }
+
+li {
+  list-style: none;
+}
 @import "slick";
 @import "slick-theme";
 @import "variables";
 @import "head";
 @import "banner";
+@import "service";
+@import "about";
+@import "portfolio";
 
 
 
