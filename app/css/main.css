@@ -219,7 +219,7 @@ li {
 
 .container {
   min-width: 320px;
-  max-width: 1175px;
+  max-width: 1024px;
   margin: 0 auto; }
 
 .container--flex {
@@ -822,7 +822,18 @@ li {
     height: inherit; }
 
 .comments {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 65px; }
+  .comments .slick-slide {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    outline: none; }
   .comments .slick-dots {
     bottom: -25px; }
     .comments .slick-dots button:before {
@@ -837,3 +848,170 @@ li {
 .fa-comments-o {
   color: #ffc155;
   font-size: 25px; }
+
+.comment {
+  width: 70%;
+  text-align: left;
+  margin: 70px 0 30px 0; }
+
+.comment__text {
+  background-color: #f6f3f3;
+  padding: 20px;
+  font-style: italic;
+  font-size: 13px;
+  color: #747474;
+  position: relative; }
+
+.comment__text::after {
+  content: '';
+  position: absolute;
+  left: 35px;
+  bottom: -13px;
+  border: 14px solid transparent;
+  border-left: 15px solid #f6f3f3; }
+
+.customer {
+  font-size: 13px;
+  margin-top: 25px; }
+
+.customer__name {
+  font-weight: bold;
+  position: relative;
+  margin-left: 55px; }
+
+.customer__name::before {
+  content: url("../img/human.png");
+  margin-right: 10px;
+  position: absolute;
+  top: -13px;
+  left: -55px; }
+
+.newsline {
+  background-color: #273a43;
+  padding: 40px 0; }
+
+.container--footer {
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  max-width: 1175px; }
+
+.newsline__block {
+  width: 20%;
+  margin: 0 15px; }
+
+.logo--footer {
+  font-size: 22px;
+  color: white;
+  font-weight: normal; }
+
+.company__desc, .contacts__text, .tweet__text, .subscribe__text {
+  color: #c3c3c3;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px; }
+
+.contacts__header, .tweets__header, .subscribe__header {
+  font-size: 22px;
+  color: white;
+  font-weight: normal; }
+
+.address, .email, .phone-number {
+  display: block;
+  color: white;
+  font-size: 13px;
+  margin-top: 10px; }
+  .address .fa, .email .fa, .phone-number .fa {
+    font-size: 22px;
+    color: #709dca; }
+  .address .fa-map-marker, .email .fa-map-marker, .phone-number .fa-map-marker {
+    margin-left: 4px; }
+  .address .fa-phone, .email .fa-phone, .phone-number .fa-phone {
+    margin-left: 1px; }
+
+.adress__text {
+  margin-left: 25px; }
+
+.email__text {
+  margin-left: 20px; }
+
+.phone-number__text {
+  margin-left: 23px; }
+
+.tweet {
+  position: relative;
+  margin-left: 40px; }
+
+.tweet:before {
+  left: -40px;
+  position: absolute;
+  content: "\f099";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 24px;
+  color: #709dca;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.tweet__text {
+  margin-bottom: 0; }
+
+.tweet__link {
+  color: #709dca;
+  font-size: 13px; }
+
+.subscribe__form {
+  margin-top: 35px; }
+
+.subscribe__email {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 65%;
+  height: 28px;
+  border: none;
+  -webkit-border-radius: 5px 0 0 5px;
+          border-radius: 5px 0 0 5px;
+  background-color: #172227;
+  color: #a7a7a7;
+  font-size: 13px;
+  padding-left: 20px; }
+
+.subscribe__button {
+  width: 35%;
+  height: 28px;
+  border: none;
+  background: #709dca;
+  -webkit-border-radius: 0 5px 5px 0;
+          border-radius: 0 5px 5px 0;
+  margin-left: -5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-size: 13px; }
+
+.copyright-line {
+  font-size: 14px;
+  color: #c4c4c4;
+  background-color: #172227;
+  height: 90px; }
+
+.container--copyright {
+  height: inherit; }
+
+.social__item {
+  display: inline-block;
+  padding-left: 0; }
+
+.social__link {
+  display: block;
+  font-size: 18px;
+  height: 30px;
+  width: 30px;
+  background-color: #2c3b42;
+  color: white; }
+  .social__link .fa {
+    margin: 7px; }
+  .social__link .fa-facebook {
+    margin-left: 10px; }
+  .social__link:hover {
+    background-color: #709dca; }

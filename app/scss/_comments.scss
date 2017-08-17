@@ -1,5 +1,13 @@
 .comments {
   text-align: center;
+  margin-bottom: 65px;
+
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    outline: none;
+  }
+
   .slick-dots {
     bottom: -25px;
 
@@ -23,4 +31,47 @@
 .fa-comments-o {
   color: $logo_color;
   font-size: 25px;
+}
+
+.comment {
+  width: 70%;
+  text-align: left;
+  margin: 70px 0 30px 0;
+}
+
+.comment__text {
+  background-color: #f6f3f3;
+  padding: 20px;
+  font-style: italic;
+  font-size: 13px;
+  color: #747474;
+  position: relative;
+}
+
+.comment__text::after {
+  content: '';
+  position: absolute;
+  left: 35px;
+  bottom: -13px;
+  border: 14px solid transparent;
+  border-left: 15px solid #f6f3f3;
+}
+
+.customer {
+  font-size: 13px;
+  margin-top: 25px;
+}
+
+.customer__name {
+  font-weight: bold;
+  position: relative;
+  margin-left: 55px;
+}
+
+.customer__name::before {
+  content: url("../img/human.png");
+  margin-right: 10px;
+  position: absolute;
+  top: -13px;
+  left: -55px;
 }
