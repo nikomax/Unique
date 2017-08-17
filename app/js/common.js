@@ -16,13 +16,6 @@ $('.single-item').slick({
         }
 ]
 });
-// $('.responsive').slick({
-//     infinite: true,
-//     slidesToShow: 2,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     dots: true
-// });
 $('.responsive').slick({
     dots: true,
     infinite: false,
@@ -52,17 +45,6 @@ $('.responsive').slick({
 
     ]
 });
-
-// var w = $(window).width();
-//     $('.multiple-items').slick({if (w < '768'){
-//         slidesToShow: 2;
-//     } else if ($(window).width() >= '768'){
-//         slidesToShow: 2
-//     }
-//     });
-
-
-
 
 var hamburger = document.querySelector(".hamburger");
 var hamburgerLines = document.querySelectorAll('.hamburger__line');
