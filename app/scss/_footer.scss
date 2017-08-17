@@ -9,14 +9,18 @@
 }
 
 .newsline__block {
-  width: 20%;
   margin: 0 15px;
-}
+  @media (min-width: 320px) {
+    width: 90%;
+  }
 
-.logo--footer {
-  font-size: 22px;
-  color: white;
-  font-weight: normal;
+  @media (min-width: 768px) {
+    width: 40%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 20%;
+  }
 }
 
 .company__desc, .contacts__text, .tweet__text, .subscribe__text {
@@ -25,10 +29,11 @@
   font-size: 14px;
 }
 
-.contacts__header, .tweets__header, .subscribe__header {
+.logo--footer, .contacts__header, .tweets__header, .subscribe__header {
   font-size: 22px;
   color: white;
   font-weight: normal;
+  margin-top: 30px;
 }
 
 .address, .email, .phone-number {
@@ -122,10 +127,12 @@
   color: #c4c4c4;
   background-color: #172227;
   height: 90px;
+  text-align: center;
 }
 
 .container--copyright {
   height: inherit;
+  flex-wrap: nowrap;
 }
 
 .social__item {
@@ -143,10 +150,6 @@
 
   .fa {
     margin: 7px;
-  }
-
-  .fa-facebook {
-    margin-left: 10px;
   }
 
   &:hover {
