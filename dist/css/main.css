@@ -535,7 +535,7 @@ li {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin-left: -40px; }
+  padding: 0; }
 
 .service__item {
   position: relative;
