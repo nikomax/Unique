@@ -470,7 +470,7 @@ li {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-left: -40px; }
+  padding: 0; }
 
 .service__item {
   position: relative;
